@@ -1,0 +1,467 @@
+
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduForm Student Portal | Лаборатори 05</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="brand">
+      <div class="brand-icon">
+        <i class="fa-solid fa-graduation-cap"></i>
+      </div>
+      <div class="brand-text">
+        <h2>Edu<span>Form</span></h2>
+        <p>STUDENT PORTAL</p>
+      </div>
+    </div>
+
+    <!-- NAVIGATION - FLEXBOX & RESPONSIVE -->
+    <nav class="navbar" id="navbar">
+      <ul class="nav-links">
+        <li>
+          <a href="#" class="active">
+            <i class="fa-solid fa-house"></i>
+            Нүүр
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-book-open"></i>
+            Хичээлүүд
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-chart-pie"></i>
+            Дүнгийн мэдээ
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-calendar-days"></i>
+            Хуваарь
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- USER & MOBILE MENU TOGGLE -->
+    <div class="user-profile">
+      <!-- Дэлгэцийн горим солих товчлуур (Desktop / Mobile) -->
+      <button class="view-toggle-btn" id="viewToggleBtn" title="Харагдах горим солих">
+        <i class="fa-solid fa-mobile-screen-button"></i>
+        <span class="btn-text">Нэгт (Mobile)</span>
+      </button>
+
+      <i class="fa-solid fa-bell notification-bell"></i>
+      <div class="avatar">
+        <i class="fa-solid fa-user"></i>
+      </div>
+      <!-- Mobile Menu Button -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu Toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= MAIN CONTAINER ================= -->
+  <div class="page-container">
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+      <!-- HERO BANNER -->
+      <section class="hero-banner">
+        <div class="hero-text">
+          <span class="badge">
+            <i class="fa-solid fa-sparkles"></i>
+            LABORATORY 05
+          </span>
+          <h1>
+            Суралцагчийн
+            <span>Хянах Самбар</span>
+          </h1>
+          <p>
+            Responsive дизайн, Media Queries болон Mobile-First арга барилаар 
+            бүтээсэн орчин үеийн сургалтын веб хуудас.
+          </p>
+          <div class="hero-buttons">
+            <a href="#" class="hero-btn">
+              <i class="fa-solid fa-book"></i>
+              Хичээлүүд
+            </a>
+            <a href="#" class="hero-btn outline">
+              <i class="fa-solid fa-user"></i>
+              Профайл
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <i class="fa-solid fa-book-open"></i>
+            <strong>12</strong>
+            <span>Судалж буй кр</span>
+          </div>
+          <div class="stat-item">
+            <i class="fa-solid fa-star"></i>
+            <strong>3.8</strong>
+            <span>Голч дүн GPA</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- QUICK INFO -->
+      <section class="quick-info">
+        <div class="info-box">
+          <div class="info-icon blue-icon">
+            <i class="fa-solid fa-clock"></i>
+          </div>
+          <div>
+            <strong>18</strong>
+            <span>Нийт кредит</span>
+          </div>
+        </div>
+        <div class="info-box">
+          <div class="info-icon purple-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div>
+            <strong>8</strong>
+            <span>Дууссан хичээл</span>
+          </div>
+        </div>
+        <div class="info-box">
+          <div class="info-icon green-icon">
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <div>
+            <strong>92%</strong>
+            <span>Ирц</span>
+          </div>
+        </div>
+        <div class="info-box">
+          <div class="info-icon orange-icon">
+            <i class="fa-solid fa-trophy"></i>
+          </div>
+          <div>
+            <strong>4</strong>
+            <span>Амжилт</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- COURSES -->
+      <section class="courses-section">
+        <div class="section-title">
+          <div>
+            <span class="small-title">MY COURSES</span>
+            <h2>Миний судалж буй хичээлүүд</h2>
+          </div>
+          <a href="#">
+            Бүгдийг харах
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="card-grid">
+          <!-- CARD 1 -->
+          <article class="card">
+            <div class="card-header blue">
+              <div class="subject-icon">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <span class="tag">IT201</span>
+            </div>
+            <div class="card-body">
+              <h3>Вэб Програмчлал</h3>
+              <p>HTML, CSS, Responsive Media Queries болон орчин үеийн веб технологиуд.</p>
+              <div class="progress">
+                <div class="progress-top">
+                  <span>Хичээлийн явц</span>
+                  <strong>85%</strong>
+                </div>
+                <div class="progress-bar">
+                  <div style="width:85%"></div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <span>
+                  <i class="fa-solid fa-clock"></i>
+                  Лхагва, 10:00
+                </span>
+                <span class="progress-badge">85%</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 2 -->
+          <article class="card">
+            <div class="card-header purple">
+              <div class="subject-icon">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <span class="tag">IT202</span>
+            </div>
+            <div class="card-body">
+              <h3>Өгөгдлийн Сан</h3>
+              <p>ER диаграмм, SQL query, relational database болон өгөгдлийн сангийн зохиомж.</p>
+              <div class="progress">
+                <div class="progress-top">
+                  <span>Хичээлийн явц</span>
+                  <strong>90%</strong>
+                </div>
+                <div class="progress-bar">
+                  <div style="width:90%"></div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <span>
+                  <i class="fa-solid fa-clock"></i>
+                  Пүрэв, 11:40
+                </span>
+                <span class="progress-badge">90%</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 3 -->
+          <article class="card">
+            <div class="card-header pink">
+              <div class="subject-icon">
+                <i class="fa-solid fa-network-wired"></i>
+              </div>
+              <span class="tag">IT203</span>
+            </div>
+            <div class="card-body">
+              <h3>Компьютерийн Сүлжээ</h3>
+              <p>OSI загвар, TCP/IP протокол, топологи болон сүлжээний хамгаалалт.</p>
+              <div class="progress">
+                <div class="progress-top">
+                  <span>Хичээлийн явц</span>
+                  <strong>70%</strong>
+                </div>
+                <div class="progress-bar">
+                  <div style="width:70%"></div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <span>
+                  <i class="fa-solid fa-clock"></i>
+                  Баасан, 14:00
+                </span>
+                <span class="progress-badge">70%</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 4 -->
+          <article class="card">
+            <div class="card-header green">
+              <div class="subject-icon">
+                <i class="fa-solid fa-layer-group"></i>
+              </div>
+              <span class="tag">IT204</span>
+            </div>
+            <div class="card-body">
+              <h3>Программ Хангамж</h3>
+              <p>Объект хандлагат програмчлал, алгоритм, design pattern болон software engineering.</p>
+              <div class="progress">
+                <div class="progress-top">
+                  <span>Хичээлийн явц</span>
+                  <strong>95%</strong>
+                </div>
+                <div class="progress-bar">
+                  <div style="width:95%"></div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <span>
+                  <i class="fa-solid fa-clock"></i>
+                  Даваа, 08:30
+                </span>
+                <span class="progress-badge">95%</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SCHEDULE -->
+      <section class="schedule-section">
+        <div class="section-title">
+          <div>
+            <span class="small-title">SCHEDULE</span>
+            <h2>Өнөөдрийн хуваарь</h2>
+          </div>
+          <i class="fa-solid fa-calendar-days calendar-icon"></i>
+        </div>
+
+        <div class="schedule-grid">
+          <div class="schedule-item">
+            <div class="schedule-time">08:30</div>
+            <div class="schedule-line"></div>
+            <div class="schedule-content">
+              <strong>Программ Хангамж</strong>
+              <span><i class="fa-solid fa-location-dot"></i> 302 тоот</span>
+            </div>
+          </div>
+          <div class="schedule-item">
+            <div class="schedule-time">10:00</div>
+            <div class="schedule-line"></div>
+            <div class="schedule-content">
+              <strong>Вэб Програмчлал</strong>
+              <span><i class="fa-solid fa-location-dot"></i> 205 тоот</span>
+            </div>
+          </div>
+          <div class="schedule-item">
+            <div class="schedule-time">14:00</div>
+            <div class="schedule-line"></div>
+            <div class="schedule-content">
+              <strong>Компьютерийн Сүлжээ</strong>
+              <span><i class="fa-solid fa-location-dot"></i> Лаборатори 2</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="widget">
+        <h3>
+          <i class="fa-solid fa-bullhorn"></i>
+          Зарууд
+        </h3>
+        <ul class="widget-list">
+          <li>
+            <div class="announcement-title">
+              <strong>Лаборатори 05</strong>
+              <span>NEW</span>
+            </div>
+            <p>Responsive Media Queries даалгаврыг хугацаанд нь илгээнэ үү.</p>
+          </li>
+          <li>
+            <strong>Явцын шалгалт</strong>
+            <p>Ирэх долоо хоногийн Мягмар гарагт явагдана.</p>
+          </li>
+          <li>
+            <strong>Шинэ хичээл</strong>
+            <p>JavaScript практик хичээл нэмэгдлээ.</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="widget">
+        <h3>
+          <i class="fa-solid fa-calendar-check"></i>
+          Хугацаа дөхсөн
+        </h3>
+        <div class="deadline-item">
+          <div class="date-box">
+            <strong>18</strong>
+            <small>OCT</small>
+          </div>
+          <div class="details">
+            <strong>Lab 05 - Responsive</strong>
+            <small>Вэб програмчлал</small>
+          </div>
+        </div>
+        <div class="deadline-item">
+          <div class="date-box alt">
+            <strong>22</strong>
+            <small>OCT</small>
+          </div>
+          <div class="details">
+            <strong>SQL Query Assignment</strong>
+            <small>Өгөгдлийн сан</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-widget">
+        <div class="profile-avatar">
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <h3>Оюутны профайл</h3>
+        <p>Web Development Student</p>
+        <div class="profile-info">
+          <span><i class="fa-solid fa-id-card"></i> ID: ST2026001</span>
+          <span><i class="fa-solid fa-envelope"></i> student@edu.mn</span>
+        </div>
+        <a href="#" class="profile-btn">
+          Профайл харах
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <div>
+          <strong>EduForm</strong>
+          <p>Student Portal</p>
+        </div>
+      </div>
+      <p class="copyright">
+        © 2026 EduForm · Laboratory 05
+        <br>
+        Responsive Design & Media Queries
+      </p>
+      <div class="footer-links">
+        <a href="#">Нууцлал</a>
+        <a href="#">Үйлчилгээ</a>
+        <a href="#">Тусламж</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script for Mobile Navigation & View Toggle -->
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navbar = document.getElementById('navbar');
+    const viewToggleBtn = document.getElementById('viewToggleBtn');
+
+    // Бургер цэс нээх / хаах
+    menuToggle.addEventListener('click', () => {
+      navbar.classList.toggle('active');
+    });
+
+    // Гар утас / Компьютер харагдац солих товчлуур
+    viewToggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('force-mobile-view');
+      
+      if (document.body.classList.contains('force-mobile-view')) {
+        viewToggleBtn.innerHTML = '<i class="fa-solid fa-desktop"></i> <span class="btn-text">Нэгт (Desktop)</span>';
+        viewToggleBtn.style.background = 'linear-gradient(135deg, #059669, #10b981)';
+      } else {
+        viewToggleBtn.innerHTML = '<i class="fa-solid fa-mobile-screen-button"></i> <span class="btn-text">Нэгт (Mobile)</span>';
+        viewToggleBtn.style.background = 'linear-gradient(135deg, #4f46e5, #7c3aed)';
+      }
+    });
+  </script>
+</body>
+</html>
